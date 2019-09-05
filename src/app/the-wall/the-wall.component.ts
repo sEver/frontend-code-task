@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PostsService } from '../posts.service';
 
 @Component({
   selector: 'app-the-wall',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./the-wall.component.less']
 })
 export class TheWallComponent implements OnInit {
-
-  constructor() { }
+  posts;
+  filterBy;
+  constructor(
+    private postsService: PostsService,
+  ) { }
 
   ngOnInit() {
+    this.posts = this.postsService.fetchPosts();
   }
-
 }

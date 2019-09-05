@@ -1,1 +1,8 @@
-<p>the-wall works!</p>
+<p>THE WALL</p>
+<input placeholder="search" [(ngModel)]="filterBy">
+<div *ngFor="let post of (posts | postFilter: filterBy) | async">
+  <h5>
+    UserId: {{post.userId}}
+    <a [routerLink]="['/post', post.id]">Title: {{post.title}}</a>
+  </h5>
+</div>
