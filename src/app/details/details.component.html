@@ -1,8 +1,16 @@
-<a href="/">Go back</a>
-<div *ngIf="post">
-  <h3>Details</h3>
-  <code>PostId: {{post.id}}</code><br>
-  <code>UserId: {{post.userId}}</code>
-  <h4>{{post.title}}</h4>
-  <p>{{post.body}}</p>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12">
+      <a href="/"><button class="btn w-100">Go back</button></a>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-12" *ngIf="post">
+      <h2 class="text-center">Details</h2>
+      <code>PostId: {{post.id}}</code><br>
+      <code>UserId: {{post.userId}}</code>
+      <h4>{{post.title}}</h4>
+      <p>{{post.body}}</p>
+    </div>
+  </div>
 </div>
