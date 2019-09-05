@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { TheWallComponent } from './the-wall/the-wall.component';
 import { DetailsComponent } from './details/details.component';
 import { PostFilterPipe } from './post-filter.pipe';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { PostFilterPipe } from './post-filter.pipe';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
