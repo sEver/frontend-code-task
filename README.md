@@ -10,11 +10,12 @@
 4. Post details page
 5. Routing in place
 6. Service talking to the API
+7. Posts in descending order
 
 ### Not implemented:
 
 1. Login/Logout functionality
-2. Posts not in descending order
+~~2. Posts not in descending order~~
 3. Posts not appearing with 1s delay
 4. User not mapped to a random name
 5. No error handling

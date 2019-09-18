@@ -9,13 +9,17 @@ import { TheWallComponent } from './the-wall/the-wall.component';
 import { DetailsComponent } from './details/details.component';
 import { PostFilterPipe } from './post-filter.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReversePipe } from './reverse.pipe';
+import { ThrottlePipe } from './throttle.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     TheWallComponent,
     DetailsComponent,
-    PostFilterPipe
+    PostFilterPipe,
+    ReversePipe,
+    ThrottlePipe
   ],
   imports: [
     BrowserModule,

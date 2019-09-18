@@ -9,7 +9,7 @@
   </div>
 
   <div class="row">
-    <div class="col-lg-4 col-md-6 col-sm-12 p-1" *ngFor="let post of (posts | postFilter: filterBy) | async">
+    <div class="col-lg-4 col-md-6 col-sm-12 p-1" *ngFor="let post of (posts | reverse | throttle | postFilter: filterBy) | async">
 
       <div class="card text-center h-100">
         <div class="card-body">
